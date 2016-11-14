@@ -9,9 +9,6 @@ serverip =  sys.argv[3]
 iptoping = sys.argv[4]
 zabbixserverip = sys.argv[5]
 
-#user = "admin"
-#password = "yhqhjsb@3311"
-#192.168.103.252
 tn = telnetlib.Telnet(serverip)
 
 tn.read_until("Username: ")
