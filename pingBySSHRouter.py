@@ -26,9 +26,6 @@ def ping(remote_conn, ip):
         os.system("zabbix_sender -z " + zabbixserverip + " -s \"cisco switch\" -k switch.ping.mc -o "+per.strip())
 
 if __name__ == '__main__':
-    #ip = '10.195.96.254'
-    #username = 'admin'
-    #password = 'cisco123'
 
     remote_conn_pre = paramiko.SSHClient()
     remote_conn_pre.set_missing_host_key_policy(paramiko.AutoAddPolicy())
